@@ -55,6 +55,7 @@ pipeline {
                     node_modules/.bin/netlify --version
                     echo "Deploy to fc1c29e9-1c2b-4521-9399-67559e75287c"
                     node_modules/.bin/netlify status
+                    node_modules/.bin/netlify deploy --dir=build --prod
                  '''
             }
         }
